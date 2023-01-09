@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  background-color: rgb(44, 37, 24);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: rgb(28, 25, 18);
+}
+header a {
+  color: rgb(209, 182, 75);
+  border-radius: 6px;
+  text-decoration: none;
+}
+#page-logo {
+  font-size: 50px;
+}
+nav {
+  padding-right: 30px;
+}
+nav ul {
+    padding-left: 0px;
+  list-style: none;
+  display: flex;
+  font-size: 25px;
+}
+nav a {
+  padding: 0 10px;
+}
+
+nav a:hover {
+  color: rgb(31, 26, 6);
+  background-color: rgb(209, 182, 75);
+}
+
+main h1 {
+  text-align: center;
+  margin: 50px;
+  font-size: 50px;
+  color: rgb(209, 182, 75);
+}
+main ul {
+    list-style: none;
+    width: 80%;
+    margin:0 auto;
+    padding: 0px;
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    }
+main ul li {
+  overflow: hidden;
+  text-align: center;
+  background-color: bisque;
+  border-radius: 6px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, .8);
+}
+main img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+ul h3{
+    text-align: center;
+    font-size: 28px;
+    margin:0;
+}
+main li a{
+    display: inline-block;
+    margin:10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(209, 182, 75);
+    width: 90px;
+    padding:3px;
+    border-radius: 6px;
+}

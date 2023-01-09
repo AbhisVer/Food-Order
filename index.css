@@ -1,0 +1,150 @@
+body {
+  font-family: "Osawald", sans-serif;
+  margin: 0;
+  background-color: rgb(44, 41, 38);
+}
+a {
+  text-decoration: none;
+}
+
+#main-header {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(29, 26, 24);
+  padding: 0 5%;
+}
+
+#page-logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(238, 164, 80);
+  text-transform: uppercase;
+}
+
+#menu-tab {
+  display: flex;
+  flex-direction: column;
+  width: 3rem;
+  height: 3rem;
+  justify-content: space-evenly;
+  display: none;
+}
+#menu-tab span {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+#main-header ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+#main-header li {
+  margin: 0 1rem;
+}
+#main-header nav a {
+  color: rgb(185, 131, 31);
+  font-size: 1.25rem;
+  border-radius: 6px;
+}
+#main-header nav a:hover {
+  color: rgb(228, 163, 44);
+}
+#side-drawer{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(21, 19, 20, 0.96);
+}
+#side-drawer header{
+  height: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgb(29, 26, 24);
+  padding: 0 5%;
+}
+#side-drawer ul{
+list-style: none;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 0;
+padding: 4rem 1rem;
+}
+#side-drawer li{
+margin: 1rem 0;
+}
+#side-drawer a{
+  font-size: 2rem;
+  text-decoration: none;
+  color: rgb(228, 206, 182);
+}
+
+#side-drawer:target{
+  display: block;
+}
+main h1 {
+  text-align: center;
+  color: rgb(238, 164, 80);
+  font-size: 3rem;
+}
+#latest-products {
+  width: 80%;
+  margin: 2rem auto;
+}
+#latest-products ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+.food-items {
+  overflow: hidden;
+  background-color: rgb(228, 206, 182);
+  border-radius: 6px;
+  /* here no need of scalibility as element gets big */
+}
+.food-items img {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+}
+.food-item-content {
+  padding: 1rem;
+  text-align: center;
+}
+.btn {
+  display: inline-block;
+  background-color: rgb(228, 157, 44);
+  color: white;
+  border-radius: 4px;
+  padding: 0.5rem 1.25rem;
+}
+
+.btn:hover {
+  background-color: rgb(221, 134, 34);
+}
+@media (max-width: 48rem) {
+  #latest-products ul {
+    grid-template-columns: 1fr;
+  }
+  main h1 {
+    font-size: 1.5rem;
+  }
+  #main-header nav {
+    display: none;
+  }
+  #menu-tab{
+    display: flex;
+  }
+
+}
